@@ -15,8 +15,8 @@
 .nav-side .nav-item.active .link{
     color: #c60023;
 }
-/* 右侧内容区 */
-.content .with-nav {
+/* 右侧内容区  同一级的class不加空格*/
+.content.with-nav {
     float: left;
-    width: 950px;
+    width: 50px;
 }

@@ -33,7 +33,7 @@ var _mm = {
                 
             },
             error       : function(err){
-                typeof param.error === 'function' && param.error(res.statusText);
+                typeof param.error === 'function' && param.error(err.statusText);
             }
         });
     },
@@ -89,7 +89,7 @@ var _mm = {
 
     //跳转到登录页面，登录完成后，跳转回登录页之前的页面，将之前的页面路径完全编码传回去，避免特殊字符的影响
     doLogin: function(){
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     //跳回主页
     goHome: function(){
